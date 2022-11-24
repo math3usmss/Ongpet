@@ -51,12 +51,12 @@ body, html {
     display: inline-block;
     margin-right: 20px;
 }
-.navegacao a{
+.navegacao .lista a{
     text-decoration: none;
     color: #fff;
     font-size: 20px;
 }
-.navegacao a:hover{
+.navegacao .lista a:hover{
     color: var(--corPrimaria);
     text-decoration: underline;
 }
