@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="parallax4">
+        <header>
+            <nav class="navegacao">
+                <div>
+                    <a href="#" class="z-index">Helpet</a>
+                    <ul class="z-index">
+                        <li><a href="#">Feitos</a></li>
+                        <li><a href="#">Doação</a></li>
+                        <li><a href="#">Profissionais</a></li>
+                    </ul>  
+                </div>  
+             </nav>
+        </header>
+
+        <div id="painel" class="z-index">
+            <div id="perfil">
+                <h3 class="titulo">Perfil</h3>
+                <img src="img/perfil.png" alt="" width="100px">
+                <div id="dados">
+                  <p>Nome: Cicero Goncalves dos Santos</p>
+                  <p>Email: cicero******@*****.com</p>
+                  <p>Senha:*********</p>
+                </div>
+                <button onclick="aparecerConsulta()" class="botao" style="padding: 10px; text-decoration:none">Marcar Consulta</button>
+            </div>
+            <div id="consultas_marcadas">
+                <button id="botao_voltar" onclick="voltar_normal()"></button>
+                <h3 class="titulo">Consultas Marcadas</h3>
+                <ul id="marcar">
+                  <li id="consulta_ja_marcada"  style="display: none;"  onmouseover="consulta()" onmouseout="sairConsulta()"><span id="doutor"></span><span id="data" class="data"></span>
+                    <div id="detalhes">
+                      <p></p>
+                      <p id="endereco"></p>
+                      <p id="descricao"></p>
+                      <button class="botao" onclick="abrir_chat()">Chat Doutor</button>
+                    </div>
+                  </li>
+                </ul>
+            
+                <div style="clear: both;"></div>
+            </div>
+            <div id="marcacao">
+                <h3 class="titulo">Marcar Consulta</h3>
+                <div id="dados_consulta">
+                  <input type="button" style="display: none;" id="botao_voltar_consulta" onclick="voltar_painel()"></input>
+                  <div>
+                      <label for="">Doutor</label>
+                      <select name="" id="doutor_marcar" class="barra_cadastro">
+                        <option value="Flavio Yuri Aquino de Oliveira">Flavio Yuri Aquino de Oliveira</option>
+                        <option value="Raquel Monteiro de Castro Tavares Figueiredo">Raquel Monteiro de Castro Tavares Figueiredo</option>
+                      </select>
+                  </div>
+                  <div>
+                      <label for="">Endereço</label>
+                      <input class="barra_cadastro" type="text" name="" id="endereco_marcar">
+                  </div>
+                  <div>
+                    <label for="">Data da consulta</label>
+                    <input class="barra_cadastro" type="date" name="" id="data_marcar">
+                </div>
+                  <div>
+                      <label for="">Descrição</label>
+                      <textarea class="barra_cadastro" name="" id="descricao_marcar" cols="20" rows="10"></textarea>
+                  </div>
+                  <button class="botao" onclick="marcar_consulta()">Marcar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  <!--chat-->
+  <div id="campo">
+    <div id="area_mensagem">
+      <p>Boa noite</p>
+    </div>
+    <input type="button" value="" onclick="fechar()" id="fechar"></input>
+    <div id="input">
+        <input  id="barra_texto" type="text">
+        <input id="enviar" onclick="digitar()" type="button" value="">  
+    </div>
+</div>
+        
+
+    <footer class="parallax3 d-flex justify-content-around flex-column text-center">
+        <div class="link_rodape z-index mb-3">
+            <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
+            <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div id="ancoras" class="z-index mb-3">
+            <a href="#">Visão</a>
+            <a href="#">Feitos</a>
+            <a href="#">Profissionais</a>
+        </div>
+        <p class="z-index">&copy;copyright 2022 - Helpet</p>
+    </footer>
+        
+        
+
+
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/da202c7192.js" crossorigin="anonymous"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</body>
+</html>
