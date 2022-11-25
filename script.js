@@ -1,3 +1,67 @@
+function outroValor(){
+    var outro = document.getElementById('outro_valor');
+    outro.style.display =  'inline-block'
+
+    var botaoOutro = document.getElementById('mudar_botao');
+    botaoOutro.style.display = 'none'
+}
+
+function pix(){
+    var pix = document.getElementById('pagamento_pix');
+    pix.style.display = 'inline-block'
+
+    var forma = document.getElementById('pagamento')
+    forma.style.display = 'none'
+}
+function boleto(){
+    var boleto = document.getElementById('pagamento_boleto');
+    boleto.style.display = 'inline-block'
+
+    var forma = document.getElementById('pagamento')
+    forma.style.display = 'none'
+}
+function cartao(){
+    var cartao = document.getElementById('pagamento_cartao');
+    cartao.style.display = 'inline-block'
+
+    var forma = document.getElementById('pagamento')
+    forma.style.display = 'none'
+}
+function voltar_forma(){
+    var forma = document.getElementById('pagamento')
+    forma.style.display = 'inline-block'
+
+    var pix = document.getElementById('pagamento_pix');
+    pix.style.display = 'none'
+
+    var boleto = document.getElementById('pagamento_boleto');
+    boleto.style.display = 'none'
+
+    var cartao = document.getElementById('pagamento_cartao');
+    cartao.style.display = 'none'
+}
+function domicilio(){
+    var endereco = document.getElementById('endereco_forma');
+    endereco.style.display = 'inline-block'
+
+    var titulo = document.getElementById('titulo_marcar');
+    titulo.style.display = 'none'
+
+    var alert = document.getElementById('alert');
+    alert.style.display = 'inline-block'
+}
+function presencial(){
+    var endereco = document.getElementById('endereco_forma');
+    endereco.style.display = 'none'
+
+    var titulo = document.getElementById('titulo_marcar');
+    titulo.style.display = 'inline-block'
+
+    var alert = document.getElementById('alert');
+    alert.style.display = 'none'
+}
+
+
 /*chat*/
 function digitar(){
     var tela = document.getElementById('area_mensagem')

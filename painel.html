@@ -54,7 +54,10 @@
                 <div style="clear: both;"></div>
             </div>
             <div id="marcacao">
-                <h3 class="titulo">Marcar Consulta</h3>
+                <h3 class="titulo" id="titulo_marcar">Marcar Consulta</h3>
+                <div id="alert" class="alert alert-danger" style="display: none;" role="alert">
+                  Ao escolher á domicilio, é necessário pagar o valor do deslocamento.
+                </div>
                 <div id="dados_consulta">
                   <input type="button" style="display: none;" id="botao_voltar_consulta" onclick="voltar_painel()"></input>
                   <div>
@@ -64,7 +67,16 @@
                         <option value="Raquel Monteiro de Castro Tavares Figueiredo">Raquel Monteiro de Castro Tavares Figueiredo</option>
                       </select>
                   </div>
-                  <div>
+                  <div id="forma_atendimento_marca">
+                    <label for="">Forma de atendimento</label>
+                    <div >
+                      <label onclick="presencial()" for="presencial"><input type="radio" name="forma" value="presencial" id="presencial">Presencial</label>
+                    </div>
+                    <div>
+                      <label onclick="domicilio()" for="domicilio"><input type="radio" name="forma" value="a domicílio" id="domicilio">A domicílio</label> 
+                    </div>
+                </div>
+                  <div id="endereco_forma" style="display: none;">
                       <label for="">Endereço</label>
                       <input class="barra_cadastro" type="text" name="" id="endereco_marcar">
                   </div>
@@ -76,6 +88,7 @@
                       <label for="">Descrição</label>
                       <textarea class="barra_cadastro" name="" id="descricao_marcar" cols="20" rows="10"></textarea>
                   </div>
+                  
                   <button class="botao" onclick="marcar_consulta()">Marcar</button>
                 </div>
             </div>
