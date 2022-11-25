@@ -1,3 +1,4 @@
+/*Doação*/
 function outroValor(){
     var outro = document.getElementById('outro_valor');
     outro.style.display =  'inline-block'
@@ -5,7 +6,6 @@ function outroValor(){
     var botaoOutro = document.getElementById('mudar_botao');
     botaoOutro.style.display = 'none'
 }
-
 function pix(){
     var pix = document.getElementById('pagamento_pix');
     pix.style.display = 'inline-block'
@@ -40,26 +40,15 @@ function voltar_forma(){
     var cartao = document.getElementById('pagamento_cartao');
     cartao.style.display = 'none'
 }
-function domicilio(){
-    var endereco = document.getElementById('endereco_forma');
-    endereco.style.display = 'inline-block'
 
-    var titulo = document.getElementById('titulo_marcar');
-    titulo.style.display = 'none'
+/*cadastro*/
+    function cadastro(){
+        var cadastro = document.getElementById('cadastro');
+        cadastro.style.display = 'none'
 
-    var alert = document.getElementById('alert');
-    alert.style.display = 'inline-block'
-}
-function presencial(){
-    var endereco = document.getElementById('endereco_forma');
-    endereco.style.display = 'none'
-
-    var titulo = document.getElementById('titulo_marcar');
-    titulo.style.display = 'inline-block'
-
-    var alert = document.getElementById('alert');
-    alert.style.display = 'none'
-}
+        var sucesso = document.getElementById('sucesso');
+        sucesso.style.display = 'inline-block'
+    }
 
 
 /*chat*/
@@ -141,3 +130,23 @@ function sairConsulta(){
         var botao = document.getElementById('botao_voltar');
         botao.style.display = 'none' 
     }
+function domicilio(){
+    var endereco = document.getElementById('endereco_forma');
+    endereco.style.display = 'inline-block'
+
+    var titulo = document.getElementById('titulo_marcar');
+    titulo.style.display = 'none'
+
+    var alert = document.getElementById('alert');
+    alert.style.display = 'inline-block'
+}
+function presencial(){
+    var endereco = document.getElementById('endereco_forma');
+    endereco.style.display = 'none'
+
+    var titulo = document.getElementById('titulo_marcar');
+    titulo.style.display = 'inline-block'
+
+    var alert = document.getElementById('alert');
+    alert.style.display = 'none'
+}

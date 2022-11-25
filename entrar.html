@@ -7,6 +7,7 @@
     <title>Helpet - entrar</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="cssBoot.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="parallax4">
@@ -25,7 +26,11 @@
          </nav>
         </header>
         
-
+        <div class="d-flex justify-content-around">
+          <div id="sucesso" class="alert alert-success" role="alert" style="display: none;">
+            Seu cadastro foi realizado com sucesso!!!
+          </div>
+        </div>
     <div id="entrar">
         <form id="cadastro" class="z-index">
           <h2 class="titulo">Cadastro</h2>
@@ -49,10 +54,11 @@
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
             <label class="form-check-label" for="exampleCheck1">Concordo com os <a href="">termos de uso</a> </label>
           </div>
-          <div class="link_entrar d-flex justify-content-around">
-            <a href="painel.html" class="botao" href="#" style="color: #fff; margin-top: 8%;">Cadastra-se</a>
+          <div class="link_entrar d-flex justify-content-around z-index">
+            <input type="button" onclick="cadastro()" class="botao" value="Cadastre-se"></input>
           </div>
         </form>
+        
         <form id="login" class="z-index">
           <h2 class="titulo">Login</h2>
           <div class="form-group">
